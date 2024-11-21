@@ -1,46 +1,61 @@
-# Getting Started with Create React App and Redux
+# User Profile App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+This is a simple User Profile App built with **React**, **Redux**, and **Material UI**, allowing users to view, edit, delete, and like user profiles. The app fetches user data from an API and displays it in a card layout, offering interactive features such as liking users and editing user information via a modal.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **View Users**: Displays a list of user profiles in a responsive grid layout.
+- **Like Users**: Click the heart icon to like or unlike a user. The liked state is visually indicated by a filled red heart.
+- **Edit Users**: Update user details (name, email, phone, website) using an edit modal.
+- **Delete Users**: Remove a user profile from the list by clicking the delete icon.
+- **Responsive Design**: Adapts to different screen sizes using Material UI responsive grid system.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React**: Frontend UI framework.
+- **Redux**: State management for handling user data and actions.
+- **Material UI**: UI component library for styled components such as Cards, Icons etc.
+- **Axios**: For making API requests.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/sujjwal21/user-profile.git
+    ```
 
-### `npm run build`
+2. Install dependencies:
+    ```bash
+    npm install
+    ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Start the development server:
+    ```bash
+    npm start
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. The app should now be running on [http://localhost:3000](http://localhost:3000).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Usage
 
-### `npm run eject`
+Once the app is running, you can:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **View Users**: All users are displayed in card format.
+- **Like Users**: Click the heart icon on a user card to like/unlike them. The heart will turn red when a user is liked.
+- **Edit Users**: Click the pencil icon to open a modal and edit the user's details. After saving, the updated details will reflect on the user card.
+- **Delete Users**: Click the trash icon to remove a user.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## API
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+This app uses **JSONPlaceholder** as a mock API for fetching user data. The user data is loaded upon component mounting using Redux actions.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## State Management
 
-## Learn More
+**Redux** is used to manage the app's global state, including:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Fetching users from the API and storing them in the Redux store.
+- Updating user profiles when edited via the modal.
+- Deleting user profiles from the store.
+- Managing liked users by maintaining an array of liked user IDs in the local state.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
