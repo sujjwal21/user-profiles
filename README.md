@@ -14,7 +14,7 @@ This is a simple User Profile App built with **React**, **Redux**, and **Materia
 
 - **React**: Frontend UI framework.
 - **Redux**: State management for handling user data and actions.
-- **Material UI**: UI component library for styled components such as Cards, Icons etc.
+- **Material UI**: UI component library for styled components such as Cards, Icons, etc.
 - **Axios**: For making API requests.
 
 
@@ -22,7 +22,8 @@ This is a simple User Profile App built with **React**, **Redux**, and **Materia
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/sujjwal21/user-profile.git
+    git clone https://github.com/sujjwal21/user-profiles
+    .git
     ```
 
 2. Install dependencies:
